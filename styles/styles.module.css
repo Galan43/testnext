@@ -1,7 +1,10 @@
 .container {
     background: rgba(109, 8, 163, 0.698);
-    border: 5px;
     border-color: gray;
+}
+.container1 {
+    background:  rgb(136, 16, 188);
+    border: 5px;
 }
 
 .navbar {
@@ -10,30 +13,86 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:black
+    color: black;
 }
 
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gifContainer {
+    margin-top: 20px;
+}
+.gif {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.h1Pri {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3.5rem;
+}
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 .navbarBrand {
     list-style: none;
     display: flex;
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
+    text-align: center; 
 }
 
 .navbarNav {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
+    text-align: center; 
 }
-.navItem{
+
+.navItem {
     margin-left: 20px;
 }
 
-.navLink{
-    color:white;
+.navLink {
+    color: white;
     text-decoration: none;
     font-size: 1rem;
+    text-align: center; 
 }
 
 .content {
@@ -42,7 +101,7 @@
     margin: 30px 30px 30px 30px;
 }
 
-.footer{
+.footer {
     background-color: rgb(136, 16, 188);
     position: fixed;
     padding: 20px 0px;
@@ -51,3 +110,4 @@
     width: 100%;
     color: white;
 }
+
