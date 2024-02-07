@@ -1,36 +1,38 @@
+// IndexPage.js
 "use client"
-import { useState } from "react"
-import Login from "./Login"
-import Registro from "./Registro"
+import { useState } from "react";
+import Login from "./Login";
+import Registro from "./Registro";
 
-const IndexPage= () => {
+const IndexPage = () => {
+    const [showLogin, setShowLogin] = useState(false);
+    const [showRegister, setShowRegister] = useState(false);
 
-    const [showLogin, setShowLogin] = useState (false)
-    const [showRegister, setShowRegister] = useState (false)
+    const handleLoginClick = () => {
+        setShowLogin(true);
+    };
 
-    const handleLoginClick= () => {
-        setShowLogin(true)
-    }
+    const handleRegisterClick = () => {
+        setShowRegister(true);
+    };
 
-    const handleRegisterClick= () => {
-        setShowRegister(true)
-    }
-    const handleCloseLogin = () =>{
-        setShowLogin(false)
-    }
-    const handleCloseRegister = () =>{
-        setShowRegister(false)
-    }
+    const handleCloseLogin = () => {
+        setShowLogin(false);
+    };
+
+    const handleCloseRegister = () => {
+        setShowRegister(false);
+    };
 
     return (
         <div>
-            <button onClick ={handleLoginClick}>Inciar Sesión</button>
+            <button onClick={handleLoginClick}>Iniciar Sesión</button>
             <br />
-            <button onClick ={handleRegisterClick}>Registro</button>
-            {showLogin && <Login onClick ={handleCloseLogin}/> }
-            {showRegister && <Registro onClick ={handleCloseRegister}/>}
+            <button onClick={handleRegisterClick}>Registro</button>
+            {showLogin && <Login />}
+            {showRegister && <Registro />}
         </div>
-    )
-}
+    );
+};
 
-export default IndexPage
+export default IndexPage;
